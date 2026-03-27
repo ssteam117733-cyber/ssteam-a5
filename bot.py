@@ -66,14 +66,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if approved:
         await update.message.reply_text(
-"""✅ ACCESS GRANTED
+"""✅ ACCESS GRANTED 𓆩❤︎𓆪
 
 Send Serial Number directly to register."""
         )
         return
 
     await update.message.reply_text(
-"""⏳ ACCESS PENDING
+"""⏳ ACCESS PENDING 𓆩☠︎︎𓆪
 
 Your account needs approval.
 
