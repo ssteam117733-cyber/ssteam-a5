@@ -59,7 +59,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     banned = cursor.execute("SELECT * FROM banned_users WHERE user_id=?", (user_id,)).fetchone()
 
     if banned:
-        await update.message.reply_text("🚫 You are banned.")
+        await update.message.reply_text("🚫 You are banned ᶠᶸᶜᵏᵧₒᵤ!🖕.")
         return
 
     approved = cursor.execute("SELECT * FROM approved_users WHERE user_id=?", (user_id,)).fetchone()
@@ -113,7 +113,7 @@ async def serial_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if not approved:
         await update.message.reply_text(
-"""⛔ ACCESS DENIED
+"""⛔ ⚠ ACCESS DENIED ᯓ★
 
 Approval required.
 
@@ -139,9 +139,9 @@ Owner:
             conn.commit()
 
             await update.message.reply_text(
-f"""✅ SERIAL REGISTERED
+f"""✅ SERIAL REGISTERED ⚡
 
-Serial:
+Serial✴:
 {serial}"""
             )
 
